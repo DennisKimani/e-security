@@ -1,0 +1,13 @@
+
+<h3>This is the place where  you can air any question of your choice or answer questions posted.</h3>
+
+<h2>Available Questions</h2>
+<ul class="list">
+  {{#each model.knows as |know|}}
+    {{know-popularity know}} {{know-tile know=know update="update" destroyKnow="destroyKnow"}}
+  {{/each}}
+</ul>
+
+{{new-know saveKnow2="saveKnow3"}}
+
+<hr>
